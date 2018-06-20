@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Stores the last user that was assigned from each round robin public group</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Group_Name__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <description>The name of the group whose last assigned user we are storing</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the group whose last assigned user we are storing</inlineHelpText>
+        <label>Group Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Assigned_User_Id__c</fullName>
+        <externalId>false</externalId>
+        <label>Last Assigned User Id</label>
+        <length>18</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Last_Assigned_User_Name__c</fullName>
+        <description>The name of the last user assigned from this group</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The name of the last user assigned from this group</inlineHelpText>
+        <label>Last Assigned User Name</label>
+        <length>100</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>RoundRobinLastAssignment</label>
+    <visibility>Public</visibility>
+</CustomObject>
